@@ -8,11 +8,16 @@ const Portfolio = () => {
     const portfolios=  [
         {
             id:1,
-            src: herooIma
+            src: herooIma,
+            web: 'https://aquamarine-jelly-3384d9.netlify.app',
+            code: 'https://github.com/rowjah/cafe-paris',
         },
         {
             id:2,
-            src:  jorDan
+            src:  jorDan,
+            web: 'https://stellular-longma-eeff32.netlify.app',
+            code: 'https://github.com/rowjah/mine',
+
         },
 
     ]
@@ -32,8 +37,8 @@ const Portfolio = () => {
                  <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                      <img src={src} alt='' className='rounded-md duration-200 hover:scale-105'  />
                      <div className='flex items-center justify-center'>
-                         <button  className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                         <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                        <a href={web}><button  className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button> </a>
+                        <a href={code}> <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button> </a>
                      </div>
                  </div>
              
